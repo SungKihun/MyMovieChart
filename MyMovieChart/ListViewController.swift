@@ -33,7 +33,16 @@ class ListViewController: UITableViewController {
     }()
     
     override func viewDidLoad() {
-        // 전부 삭제처리
+        // 1. 호핀 API 호출을 위한 URI를 생성
+        let url = "http://swiftapi.rubypaper.co.kr:2029/hoppin/movies?version=1&page=1&count=10&genreId=&order=releasedateasc"
+        let apiURI: URL! = URL(string: url)
+        
+        // 2. REST API를 호출
+        let apidata = try! Data(contentsOf: apiURI)
+        
+        // 3. 데이터 전송 결과를 로그로 출력 (반드시 필요한 코드는 아님)
+        let log = NSString(data: apidata, encoding: String.Encoding.utf8.rawValue) ?? ""
+        NSLog("API Result = \(log)")
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
