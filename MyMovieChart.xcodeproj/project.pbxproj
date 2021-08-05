@@ -15,6 +15,7 @@
 		7BF4B0B526BB9BD20017B2D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF4B0B326BB9BD20017B2D7 /* LaunchScreen.storyboard */; };
 		7BF4B0BD26BB9C760017B2D7 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF4B0BC26BB9C760017B2D7 /* ListViewController.swift */; };
 		7BF4B0BF26BB9E5B0017B2D7 /* MovieVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF4B0BE26BB9E5B0017B2D7 /* MovieVO.swift */; };
+		7BF4B0C126BBB59B0017B2D7 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF4B0C026BBB59B0017B2D7 /* MovieCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		7BF4B0B626BB9BD20017B2D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BF4B0BC26BB9C760017B2D7 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		7BF4B0BE26BB9E5B0017B2D7 /* MovieVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieVO.swift; sourceTree = "<group>"; };
+		7BF4B0C026BBB59B0017B2D7 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +64,11 @@
 			children = (
 				7BF4B0A826BB9BD10017B2D7 /* AppDelegate.swift */,
 				7BF4B0AA26BB9BD10017B2D7 /* SceneDelegate.swift */,
-				7BF4B0AC26BB9BD10017B2D7 /* ViewController.swift */,
-				7BF4B0AE26BB9BD10017B2D7 /* Main.storyboard */,
 				7BF4B0BE26BB9E5B0017B2D7 /* MovieVO.swift */,
+				7BF4B0C026BBB59B0017B2D7 /* MovieCell.swift */,
+				7BF4B0AC26BB9BD10017B2D7 /* ViewController.swift */,
 				7BF4B0BC26BB9C760017B2D7 /* ListViewController.swift */,
+				7BF4B0AE26BB9BD10017B2D7 /* Main.storyboard */,
 				7BF4B0B126BB9BD20017B2D7 /* Assets.xcassets */,
 				7BF4B0B326BB9BD20017B2D7 /* LaunchScreen.storyboard */,
 				7BF4B0B626BB9BD20017B2D7 /* Info.plist */,
@@ -145,6 +148,7 @@
 			files = (
 				7BF4B0AD26BB9BD10017B2D7 /* ViewController.swift in Sources */,
 				7BF4B0A926BB9BD10017B2D7 /* AppDelegate.swift in Sources */,
+				7BF4B0C126BBB59B0017B2D7 /* MovieCell.swift in Sources */,
 				7BF4B0BD26BB9C760017B2D7 /* ListViewController.swift in Sources */,
 				7BF4B0AB26BB9BD10017B2D7 /* SceneDelegate.swift in Sources */,
 				7BF4B0BF26BB9E5B0017B2D7 /* MovieVO.swift in Sources */,
