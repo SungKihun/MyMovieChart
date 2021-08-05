@@ -16,4 +16,7 @@ class MovieCell: UITableViewCell {
     @IBOutlet var rating: UILabel! // 개봉일
     
     @IBOutlet var desc: UILabel! // 평점
+    
+    @IBOutlet var thumbnail: UIImageView! // 썸네일 이미지
+    
 }
