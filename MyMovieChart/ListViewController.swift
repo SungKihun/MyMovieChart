@@ -80,7 +80,7 @@ class ListViewController: UITableViewController {
             
             // 7. 전체 데이터 카운트를 얻는다.
             let totalCount = (hoppin["totalCount"] as? NSString)!.integerValue
-            
+             
             // 8. totalCount가 읽어온 데이터 크기와 같거나 클 경우 더보기 버튼을 막는다.
             if (self.list.count >= totalCount) {
                 self.moreBtn.isHidden = true
