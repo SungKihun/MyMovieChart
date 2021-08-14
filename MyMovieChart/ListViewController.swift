@@ -115,17 +115,12 @@ class ListViewController: UITableViewController {
         cell.opendate?.text = row.opendate
         cell.rating?.text = "\(row.rating!)"
         
-//        // 썸네일 경로를 인자값으로 하는 URL 객체를 생성
-//        let url: URL! = URL(string: row.thumbnail!)
-//
-//        // 이미지를 읽어와 Data 객체에 저장
-//        let imageData = try! Data(contentsOf: url)
-//
-//        // UIImage 객체를 생성하여 아울렛 변수의 image 속성에 대입
-//        cell.thumbnail.image = UIImage(data: imageData)
-        
-        // 이미지 객체를 대입한다.
-        cell.thumbnail.image = row.thumbnailImage
+        // 비동기 방식으로 섬네일 이미지를 읽어옴
+        DispatchQueue.main.async(execute: {
+            NSLog("비동기 방식")
+            cell.thumbnail.image = self.getThumbnailImage(indexPath.row)
+        })
+        NSLog("셀을 리턴")
         
         // 셀 객체를 반환
         return cell
@@ -133,5 +128,21 @@ class ListViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         NSLog("선택된 행은 \(indexPath.row) 번째 행입니다.")
+    }
+    
+    func getThumbnailImage(_ index: Int) -> UIImage {
+        // 인자값으로 받은 인덱스를 기반으로 해당하는 배열 데이터를 읽어옴
+        let mvo = self.list[index]
+        
+        // 메모이제이션: 저장된 이미지가 있으면 그것을 반환하고, 없을 경우 내려받아 저장한 후 반환
+        if let savedImage = mvo.thumbnailImage {
+            return savedImage
+        } else {
+            let url: URL! = URL(string: mvo.thumbnail!)
+            let imageData = try! Data(contentsOf: url)
+            mvo.thumbnailImage = UIImage(data: imageData) // UIImage를 MovieVO 객체에 우선 저장
+            
+            return mvo.thumbnailImage! // 저장된 이미지를 반환
+        }
     }
 }
