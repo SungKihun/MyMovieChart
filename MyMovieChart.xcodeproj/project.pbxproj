@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B832C2C26D019BB00910F5B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B832C2B26D019BB00910F5B /* DetailViewController.swift */; };
 		7B8845E326BBBE4C009F45C8 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8845E226BBBE4C009F45C8 /* MovieCell.swift */; };
 		7B8845E826BBC6E4009F45C8 /* secret.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B8845E526BBC6E4009F45C8 /* secret.jpg */; };
 		7B8845E926BBC6E4009F45C8 /* darknight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B8845E626BBC6E4009F45C8 /* darknight.jpg */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B832C2B26D019BB00910F5B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		7B8845E226BBBE4C009F45C8 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		7B8845E526BBC6E4009F45C8 /* secret.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = secret.jpg; sourceTree = "<group>"; };
 		7B8845E626BBC6E4009F45C8 /* darknight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darknight.jpg; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				7BF4B0A826BB9BD10017B2D7 /* AppDelegate.swift */,
 				7BF4B0AA26BB9BD10017B2D7 /* SceneDelegate.swift */,
 				7BF4B0AE26BB9BD10017B2D7 /* Main.storyboard */,
+				7B832C2B26D019BB00910F5B /* DetailViewController.swift */,
 				7BF4B0B126BB9BD20017B2D7 /* Assets.xcassets */,
 				7BF4B0B326BB9BD20017B2D7 /* LaunchScreen.storyboard */,
 				7BF4B0B626BB9BD20017B2D7 /* Info.plist */,
@@ -166,6 +169,7 @@
 				7BF4B0A926BB9BD10017B2D7 /* AppDelegate.swift in Sources */,
 				7B8845E326BBBE4C009F45C8 /* MovieCell.swift in Sources */,
 				7BF4B0BD26BB9C760017B2D7 /* ListViewController.swift in Sources */,
+				7B832C2C26D019BB00910F5B /* DetailViewController.swift in Sources */,
 				7BF4B0AB26BB9BD10017B2D7 /* SceneDelegate.swift in Sources */,
 				7BF4B0BF26BB9E5B0017B2D7 /* MovieVO.swift in Sources */,
 			);

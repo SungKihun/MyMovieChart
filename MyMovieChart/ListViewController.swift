@@ -47,7 +47,7 @@ class ListViewController: UITableViewController {
         let apidata = try! Data(contentsOf: apiURI)
         
         // 3. 데이터 전송 결과를 로그로 출력 (반드시 필요한 코드는 아님)
-        let log = NSString(data: apidata, encoding: String.Encoding.utf8.rawValue) ?? "데이터가 없습니다"
+//        let log = NSString(data: apidata, encoding: String.Encoding.utf8.rawValue) ?? "데이터가 없습니다"
 //        NSLog("API Result = \(log)")
         
         // 4. JSON 객체를 파싱하여 NSDictionary 객체로 변환
@@ -117,10 +117,8 @@ class ListViewController: UITableViewController {
         
         // 비동기 방식으로 섬네일 이미지를 읽어옴
         DispatchQueue.main.async(execute: {
-            NSLog("비동기 방식")
             cell.thumbnail.image = self.getThumbnailImage(indexPath.row)
         })
-        NSLog("셀을 리턴")
         
         // 셀 객체를 반환
         return cell
@@ -143,6 +141,22 @@ class ListViewController: UITableViewController {
             mvo.thumbnailImage = UIImage(data: imageData) // UIImage를 MovieVO 객체에 우선 저장
             
             return mvo.thumbnailImage! // 저장된 이미지를 반환
+        }
+    }
+    
+}
+
+extension ListViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segue_detail" {
+            let cell = sender as! MovieCell
+            
+            let path = self.tableView.indexPath(for: cell)
+            
+            let movieinfo = self.list[path!.row]
+            
+            let detailVC = segue.destination as? DetailViewController
+            detailVC?.mvo = movieinfo
         }
     }
 }
