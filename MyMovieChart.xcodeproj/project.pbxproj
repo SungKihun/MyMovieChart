@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B417CA026DF9A5E006ADA9D /* Listbullets.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B417C9E26DF9A5E006ADA9D /* Listbullets.png */; };
+		7B417CA126DF9A5E006ADA9D /* Trailer.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B417C9F26DF9A5E006ADA9D /* Trailer.png */; };
 		7B832C2C26D019BB00910F5B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B832C2B26D019BB00910F5B /* DetailViewController.swift */; };
 		7B8845E326BBBE4C009F45C8 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8845E226BBBE4C009F45C8 /* MovieCell.swift */; };
 		7B8845E826BBC6E4009F45C8 /* secret.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B8845E526BBC6E4009F45C8 /* secret.jpg */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B417C9E26DF9A5E006ADA9D /* Listbullets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Listbullets.png; sourceTree = "<group>"; };
+		7B417C9F26DF9A5E006ADA9D /* Trailer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Trailer.png; sourceTree = "<group>"; };
 		7B832C2B26D019BB00910F5B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		7B8845E226BBBE4C009F45C8 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		7B8845E526BBC6E4009F45C8 /* secret.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = secret.jpg; sourceTree = "<group>"; };
@@ -52,6 +56,8 @@
 		7B8845E426BBC692009F45C8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7B417C9E26DF9A5E006ADA9D /* Listbullets.png */,
+				7B417C9F26DF9A5E006ADA9D /* Trailer.png */,
 				7B8845E626BBC6E4009F45C8 /* darknight.jpg */,
 				7B8845E726BBC6E4009F45C8 /* rain.jpg */,
 				7B8845E526BBC6E4009F45C8 /* secret.jpg */,
@@ -150,6 +156,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B417CA026DF9A5E006ADA9D /* Listbullets.png in Resources */,
+				7B417CA126DF9A5E006ADA9D /* Trailer.png in Resources */,
 				7BF4B0B526BB9BD20017B2D7 /* LaunchScreen.storyboard in Resources */,
 				7B8845EA26BBC6E4009F45C8 /* rain.jpg in Resources */,
 				7BF4B0B226BB9BD20017B2D7 /* Assets.xcassets in Resources */,

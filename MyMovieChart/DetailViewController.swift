@@ -20,7 +20,10 @@ class DetailViewController: UIViewController {
         NSLog("linkurl = \(self.mvo.detail!), title=\(self.mvo.title!)")
         
         let navibar = self.navigationItem
+        
         navibar.title = self.mvo.title
+        
+//        title = self.mvo.title // 이것도 돌아감
         
         let url = URL(string: (self.mvo.detail!))
         let req = URLRequest(url: url!)
