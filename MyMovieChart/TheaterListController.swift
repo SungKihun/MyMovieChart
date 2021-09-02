@@ -67,4 +67,22 @@ class TheaterListController: UITableViewController {
             self.present(alert, animated: false)
         }
     }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.list.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // self.list 배열에서 행에 맞는 데이터를 꺼냄
+        let obj = self.list[indexPath.row]
+        
+        // 재사용 큐로부터 tCell 식별자에 맞는 셀 객체를 전달받음
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tCell") as! TheaterCell
+        
+        cell.name?.text = obj["상영관명"] as? String
+        cell.tel?.text = obj["연락처"] as? String
+        cell.addr?.text = obj["소재지도로명주소"] as? String
+        
+        return cell
+    }
 }
