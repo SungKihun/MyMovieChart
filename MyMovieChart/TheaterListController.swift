@@ -16,7 +16,7 @@ class TheaterListController: UITableViewController {
     
     override func viewDidLoad() {
         // API를 호출한다.
-        
+        self.callTheaterAPI()
     }
     
     func callTheaterAPI() {
