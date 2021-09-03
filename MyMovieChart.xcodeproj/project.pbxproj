@@ -94,13 +94,13 @@
 				7BF4B0AE26BB9BD10017B2D7 /* Main.storyboard */,
 				7B417CA226DFA621006ADA9D /* TheaterCell.swift */,
 				7B417CA426DFA756006ADA9D /* TheaterListController.swift */,
-				7B832C2B26D019BB00910F5B /* DetailViewController.swift */,
 				7BF4B0B126BB9BD20017B2D7 /* Assets.xcassets */,
 				7BF4B0B326BB9BD20017B2D7 /* LaunchScreen.storyboard */,
 				7BF4B0B626BB9BD20017B2D7 /* Info.plist */,
 				7BF4B0BE26BB9E5B0017B2D7 /* MovieVO.swift */,
 				7B8845E226BBBE4C009F45C8 /* MovieCell.swift */,
 				7BF4B0BC26BB9C760017B2D7 /* ListViewController.swift */,
+				7B832C2B26D019BB00910F5B /* DetailViewController.swift */,
 			);
 			path = MyMovieChart;
 			sourceTree = "<group>";
